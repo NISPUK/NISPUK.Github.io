@@ -75,17 +75,19 @@
     </ul>
   </section>
 
-  <!-- Embedded Video (demo) -->
-  <section class="video-demo">
-    <h3>Video Demonstration</h3>
-    <div class="video-wrapper">
-      <!-- Put SALCO-Video.mov in img folder, if desired -->
-      <video controls preload="metadata">
-        <source src="img/SALCO-Video.mp4" type="video/mp4" />
-        Ihr Browser unterstützt dieses Videoformat nicht.
-      </video>
-    </div>
-  </section>
+<!-- Embedded Video (demo) -->
+<section class="video-demo">
+  <h3>Video Demonstration</h3>
+
+  <!-- This wrapper enforces a 9:16 ratio -->
+  <div class="video-wrapper-vertical">
+    <video controls preload="metadata">
+      <!-- The file MUST be in /img/ folder, named SALCO-Video.mp4 exactly -->
+      <source src="img/SALCO-Video.mp4" type="video/mp4" />
+      Ihr Browser unterstützt dieses Videoformat nicht.
+    </video>
+  </div>
+</section>
 
   <!-- Testimonial Section -->
   <section class="testimonial">
