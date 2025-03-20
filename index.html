@@ -1,29 +1,33 @@
+<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
   <title>SALCO – Design in Perfektion</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <!-- Google Font: Open Sans -->
   <link
-    rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet"
   />
+
   <!-- Link to CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Full-Width Hero Video (no overlay, no text) -->
+  <!-- Full-Width Hero Video (NO overlay or text) -->
   <section class="hero-video-section">
-    <iframe
-      src="https://player.vimeo.com/video/1054072031?background=1&autoplay=1&loop=1&muted=1&controls=0"
-      allow="autoplay; fullscreen; picture-in-picture"
-      allowfullscreen
-      class="full-hero-video"
-    ></iframe>
+    <div class="video-container">
+      <iframe
+        src="https://player.vimeo.com/video/1054072031?background=1&autoplay=1&loop=1&muted=1&controls=0"
+        allow="autoplay; fullscreen; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
   </section>
 
-  <!-- Small headline & subtext after scrolling -->
+  <!-- Small headline & subtext -->
   <section class="intro-section">
     <h1>SALCO hält, was andere fallen lassen</h1>
     <p class="subtitle">Magnetisch perfekt für deine Dusche</p>
@@ -32,62 +36,54 @@
   <!-- Product Section -->
   <section class="product-section">
     <div class="product-image">
-      <!-- Use your new product image -->
+      <!-- Your main product image -->
       <img
         src="img/IMG_5394_jpg-768x1024.jpeg"
         alt="SALCO Magnet Duschhalterung"
       />
     </div>
     <div class="product-content">
-      <h3>Campingdusche &amp; Umhängetasche</h3>
-      <h2>reiseregen</h2>
+      <h2>Die SALCO Duschhalterung</h2>
       <p>
-        reiseregen ist von uns im Hinblick auf Funktionalität und Komfort entwickelt
-        und ist die erste wirklich durchdachte Outdoordusche.
+        Kippende Flaschen, rutschige Ablagen, verschüttetes Shampoo – kennt jeder.
+        Mit unserer edlen, magnetischen Edelstahlhalterung bringst du
+        minimalistische Eleganz und Ordnung in dein Badezimmer –
+        <strong>ohne Bohren</strong> und kompatibel mit all deinen
+        Lieblingspflegeprodukten!
       </p>
-      <p>
-        Erhältlich als BASIC-Modell mit 10l Volumen &amp; als PLUS-Modell mit 15l Volumen.
-      </p>
+
       <!-- PayPal button replacing 'KAUFEN' -->
       <a href="https://www.paypal.com" target="_blank" class="paypal-button">
-        <span>Mit PayPal kaufen</span>
+        Mit PayPal kaufen
       </a>
     </div>
   </section>
 
   <!-- Short Explainer Text -->
   <section class="explainer-section">
-    <h3>Die Lösung für dein Bad</h3>
-    <p>
-      Kippende Flaschen, rutschige Ablagen, verschüttetes Shampoo – kennt jeder.
-      Verabschiede dich von unordentlichen Regalen und genieße einen aufgeräumten
-      Duschbereich mit unserer edlen magnetischen Edelstahlhalterung.
-      <strong>Mache dein Badezimmer zu einem Ort der Harmonie und Eleganz!</strong>
-    </p>
-
-    <h4>Darum wirst du sie lieben</h4>
+    <h3>Darum wirst du sie lieben</h3>
     <ul>
-      <li>Einfache Montage – kein Bohren, kein Stress! Einfach ankleben und los geht’s.</li>
-      <li>Kompatibel mit allen Flaschen – funktioniert mit deinen Lieblingsprodukten.</li>
-      <li>Modernes, minimalistisches Design – passt perfekt in jedes Badezimmer.</li>
-      <li>Rostfrei &amp; langlebig – hochwertige Materialien für eine lange Nutzung.</li>
-      <li>Hygienisch &amp; aufgeräumt – verhindert Wasseransammlungen und Schimmelbildung.</li>
+      <li>Einfache Montage – kein Bohren, kein Stress! Einfach ankleben und los.</li>
+      <li>Kompatibel mit allen Flaschen – passt für deine Lieblingsprodukte.</li>
+      <li>Modernes, minimalistisches Design – hochwertige Materialien.</li>
+      <li>Rostfrei &amp; langlebig – ideal für langfristigen Einsatz.</li>
+      <li>Hygienisch &amp; aufgeräumt – kein Wasserstau, kein Schimmel.</li>
     </ul>
 
-    <h4>Alles, was du brauchst</h4>
+    <h3>Alles, was du brauchst</h3>
     <p>Die SALCO Duschhalterung kommt mit allem, was du brauchst:</p>
     <ul>
-      <li>1 Stk. selbstklebende Edelstahlleiste (500 x 50 x 0,45 mm)</li>
-      <li>4 Stk. Magnetsaugnäpfe (Vertikale Tragkraft bis max. 0,6 kg)</li>
-      <li>1 Stk. Rasierhalter (Dieser wird ebenfalls mit einem Saugnapf befestigt)</li>
+      <li>1 × selbstklebende Edelstahlleiste (500 × 50 × 0,45 mm)</li>
+      <li>4 × Magnetsaugnäpfe (Tragkraft bis 0,6 kg)</li>
+      <li>1 × Rasierhalter (Saugnapf‐Befestigung an der Leiste)</li>
     </ul>
   </section>
 
-  <!-- Embedded Video Demo -->
+  <!-- Embedded Video (demo) -->
   <section class="video-demo">
     <h3>Video Demonstration</h3>
     <div class="video-wrapper">
-      <!-- Put your .mov or .mp4 file in videos/ folder, or embed from somewhere else -->
+      <!-- If you have your own .mp4, place in /videos and update the src below -->
       <video controls preload="metadata">
         <source src="videos/salco-demo.mov" type="video/mp4" />
         Ihr Browser unterstützt dieses Videoformat nicht.
@@ -95,7 +91,7 @@
     </div>
   </section>
 
-  <!-- Testimonial -->
+  <!-- Testimonial Section -->
   <section class="testimonial">
     <blockquote>
       <p>
@@ -106,26 +102,29 @@
     </blockquote>
   </section>
 
-  <!-- Gallery Row of 6 images -->
+  <!-- Gallery of 6 images -->
   <section class="gallery-section">
     <div class="gallery-row">
-      <img src="img/IMG_1145-300x225.jpeg" alt="Product Gallery 1" />
-      <img src="img/IMG_5318-768x1024.jpeg" alt="Product Gallery 2" />
-      <img src="img/IMG_5338-scaled.jpeg" alt="Product Gallery 3" />
-      <img src="img/IMG_5352-300x203.jpeg" alt="Product Gallery 4" />
-      <img src="img/IMG_5374_jpg-768x1024.jpeg" alt="Product Gallery 5" />
-      <img src="img/IMG_5390_jpg-225x300.jpeg" alt="Product Gallery 6" />
+      <img src="img/IMG_1145-300x225.jpeg" alt="Gallery 1" />
+      <img src="img/IMG_5318-768x1024.jpeg" alt="Gallery 2" />
+      <img src="img/IMG_5338-scaled.jpeg" alt="Gallery 3" />
+      <img src="img/IMG_5352-300x203.jpeg" alt="Gallery 4" />
+      <img src="img/IMG_5374_jpg-768x1024.jpeg" alt="Gallery 5" />
+      <img src="img/IMG_5390_jpg-225x300.jpeg" alt="Gallery 6" />
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-columns">
       <div class="footer-col-1">
-        <p><strong>SALCO-Design</strong><br>
-        Kirchstraße 164<br>
+        <p><strong>SALCO-Design</strong><br />
+        Kirchstraße 164<br />
         46514 Schermbeck</p>
-        <p>E-Mail: <a href="mailto:salco@mail.de">salco@mail.de</a></p>
+        <p>
+          E-Mail:
+          <a href="mailto:salco@mail.de">salco@mail.de</a>
+        </p>
       </div>
       <div class="footer-col-2">
         <p>
@@ -133,9 +132,9 @@
           <a href="#">Impressum</a>
         </p>
         <div class="socials">
-          <a href="#" class="icon-tiktok">Tiktok</a>
-          <a href="#" class="icon-instagram">Instagram</a>
-          <a href="#" class="icon-youtube">Youtube</a>
+          <a href="#">Tiktok</a>
+          <a href="#">Instagram</a>
+          <a href="#">Youtube</a>
         </div>
       </div>
     </div>
