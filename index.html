@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
@@ -75,19 +76,23 @@
     </ul>
   </section>
 
-<!-- Embedded Video (demo) -->
-<section class="video-demo">
-  <h3>Video Demonstration</h3>
-
-  <!-- This wrapper enforces a 9:16 ratio -->
-  <div class="video-wrapper-vertical">
-    <video controls preload="metadata">
-      <!-- The file MUST be in /img/ folder, named SALCO-Video.mp4 exactly -->
-      <source src="img/SALCO-Video.mp4" type="video/mp4" />
-      Ihr Browser unterstützt dieses Videoformat nicht.
-    </video>
-  </div>
-</section>
+  <!-- TikTok Embed Section -->
+  <section class="video-demo">
+    <h3>TikTok Video Demonstration</h3>
+    <div class="tiktok-embed-container">
+      <!-- Replace this link with your actual TikTok link -->
+      <blockquote
+        class="tiktok-embed"
+        cite="https://www.tiktok.com/@someusername/video/123456789"
+        data-video-id="123456789"
+        style="max-width: 400px;"
+      >
+        <section>Loading from TikTok...</section>
+      </blockquote>
+      <!-- TikTok embed script -->
+      <script async src="https://www.tiktok.com/embed.js"></script>
+    </div>
+  </section>
 
   <!-- Testimonial Section -->
   <section class="testimonial">
