@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
@@ -16,7 +15,7 @@
 </head>
 <body>
 
-  <!-- Full-Width Hero Video (NO overlay or text) -->
+  <!-- Full-Width Hero Video (no overlay/text) -->
   <section class="hero-video-section">
     <div class="video-container">
       <iframe
@@ -36,7 +35,6 @@
   <!-- Product Section -->
   <section class="product-section">
     <div class="product-image">
-      <!-- Main product image -->
       <img
         src="img/IMG_5394_jpg-768x1024.jpeg"
         alt="SALCO Magnet Duschhalterung"
@@ -51,8 +49,6 @@
         <strong>ohne Bohren</strong> und kompatibel mit all deinen
         Lieblingspflegeprodukten!
       </p>
-
-      <!-- PayPal button replacing 'KAUFEN' -->
       <a href="https://www.paypal.com" target="_blank" class="paypal-button">
         Mit PayPal kaufen
       </a>
@@ -83,7 +79,7 @@
   <section class="video-demo">
     <h3>Video Demonstration</h3>
     <div class="video-wrapper">
-      <!-- If you place SALCO-Video.mov in the /img folder, update below -->
+      <!-- Put SALCO-Video.mov in img folder, if desired -->
       <video controls preload="metadata">
         <source src="img/SALCO-Video.mov" type="video/mp4" />
         Ihr Browser unterstützt dieses Videoformat nicht.
@@ -102,7 +98,7 @@
     </blockquote>
   </section>
 
-  <!-- Gallery of 6 images -->
+  <!-- Gallery of 5 images -->
   <section class="gallery-section">
     <div class="gallery-grid">
       <img src="img/IMG_1145-300x225.jpeg" alt="Gallery 1" />
@@ -110,7 +106,6 @@
       <img src="img/IMG_5338-scaled.jpeg" alt="Gallery 3" />
       <img src="img/IMG_5352-300x203.jpeg" alt="Gallery 4" />
       <img src="img/IMG_5374_jpg-768x1024.jpeg" alt="Gallery 5" />
-      <img src="img/IMG_5390_jpg-225x300.jpeg" alt="Gallery 6" />
     </div>
   </section>
 
@@ -128,14 +123,30 @@
       </div>
       <div class="footer-right">
         <p class="footer-links">
-          <a href="#">Datenschutz</a> | 
+          <a href="#">Datenschutz</a>
+          <span>|</span>
           <a href="#">Impressum</a>
         </p>
-        <p class="footer-social">
-          <a href="#">Tiktok</a> |
-          <a href="#">Instagram</a> |
-          <a href="#">Youtube</a>
-        </p>
+        <div class="footer-icons">
+          <!-- TikTok Icon -->
+          <a href="#" aria-label="TikTok">
+            <svg width="24" height="24" fill="#0c71c3" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 4.5V14.7188C8.71875 14.668 8.4375 14.6406 8.15625 14.6406C5.39844 14.6406 3.1875 16.8516 3.1875 19.6094C3.1875 22.3672 5.39844 24.5781 8.15625 24.5781C10.9141 24.5781 13.125 22.3672 13.125 19.6094V10.2227C15.2227 12.0703 17.8711 13.125 20.7188 13.125V9.89844C19.4863 9.89844 18.2812 9.58984 17.2227 9.00781C16.1641 8.42578 15.2891 7.58984 14.6719 6.58984C14.0547 5.58984 13.7188 4.47656 13.6953 3.33984H9Z"/>
+            </svg>
+          </a>
+          <!-- Instagram Icon -->
+          <a href="#" aria-label="Instagram">
+            <svg width="24" height="24" fill="#0c71c3" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.75 2C4.57436 2 2 4.57436 2 7.75V16.25C2 19.4256 4.57436 22 7.75 22H16.25C19.4256 22 22 19.4256 22 16.25V7.75C22 4.57436 19.4256 2 16.25 2H7.75ZM17.75 4.5C18.3023 4.5 18.75 4.94772 18.75 5.5C18.75 6.05228 18.3023 6.5 17.75 6.5C17.1977 6.5 16.75 6.05228 16.75 5.5C16.75 4.94772 17.1977 4.5 17.75 4.5ZM12 7.25C14.8995 7.25 17.25 9.60048 17.25 12.5C17.25 15.3995 14.8995 17.75 12 17.75C9.10048 17.75 6.75 15.3995 6.75 12.5C6.75 9.60048 9.10048 7.25 12 7.25ZM12 9.75C10.2051 9.75 8.75 11.2051 8.75 13C8.75 14.7949 10.2051 16.25 12 16.25C13.7949 16.25 15.25 14.7949 15.25 13C15.25 11.2051 13.7949 9.75 12 9.75Z"/>
+            </svg>
+          </a>
+          <!-- YouTube Icon -->
+          <a href="#" aria-label="YouTube">
+            <svg width="24" height="24" fill="#0c71c3" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23.5 6.21c0-1.13-.81-2.14-1.88-2.44C19.69 3.25 12.5 3.25 12.5 3.25s-7.19 0-9.12.52A2.49 2.49 0 0 0 1.5 6.21c-.5 2-.75 4.24-.75 6.51s.25 4.5.75 6.51c0 1.14.81 2.15 1.88 2.45C5.31 21.57 12.5 21.57 12.5 21.57s7.19 0 9.12-.52A2.49 2.49 0 0 0 23.5 19.23c.5-2 .75-4.24.75-6.51s-.25-4.5-.75-6.51zM10 15.72v-6l5.25 3-5.25 3z"/>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
   </footer>
