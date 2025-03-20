@@ -1,7 +1,4 @@
-/* script.js - minimal placeholder */
+console.log("Loaded SALCO single-page site.");
 
-console.log("SALCO site loaded!");
-
-// Everything here is static—no special overlays or interactive elements needed.
-// The hero video is forced to 100% width, so it may show whitespace if the
-// aspect ratio doesn't match the screen.
+// No special interactive logic needed.
+// The CSS ensures the hero video is wide and has a 16:9 ratio container.
