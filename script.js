@@ -1,3 +1,2 @@
 console.log("Loaded SALCO single-page site.");
-
-// No special interactive logic needed; styles handle layout & responsiveness.
+// No special JS needed; layout & responsiveness handled in CSS.
