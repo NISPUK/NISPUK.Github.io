@@ -1,4 +1,4 @@
-/* Use Open Sans from Google Fonts */
+/* GLOBAL RESETS & FONTS */
 * {
   margin: 0;
   padding: 0;
@@ -11,14 +11,13 @@ body {
   color: #333;
 }
 
-/* Hero Video Section: Full width using aspect ratio trick */
+/* HERO VIDEO SECTION */
 .hero-video-section {
   width: 100%;
   position: relative;
-  /* We'll use a 16:9 ratio for smooth scaling. Adjust as desired. */
-  padding-bottom: 56.25%;
+  padding-bottom: 56.25%; /* 16:9 ratio */
   overflow: hidden;
-  background: #000; /* fallback if the video doesn't load */
+  background: #000; /* fallback */
 }
 .video-container iframe {
   position: absolute;
@@ -29,7 +28,7 @@ body {
   border: none;
 }
 
-/* Intro Section */
+/* INTRO SECTION */
 .intro-section {
   text-align: center;
   padding: 50px 20px;
@@ -44,7 +43,7 @@ body {
   color: #666;
 }
 
-/* Product Section */
+/* PRODUCT SECTION */
 .product-section {
   display: flex;
   flex-wrap: wrap;
@@ -89,7 +88,7 @@ body {
   background: #e0ab2d;
 }
 
-/* Explainer Section */
+/* EXPLAINER SECTION */
 .explainer-section {
   max-width: 800px;
   margin: 30px auto;
@@ -112,7 +111,7 @@ body {
   margin: 0.3em 0;
 }
 
-/* Video Demo */
+/* VIDEO DEMO */
 .video-demo {
   max-width: 800px;
   margin: 40px auto;
@@ -133,7 +132,7 @@ body {
   border-radius: 4px;
 }
 
-/* Testimonial */
+/* TESTIMONIAL */
 .testimonial {
   max-width: 800px;
   margin: 40px auto;
@@ -152,73 +151,78 @@ body {
   font-weight: bold;
 }
 
-/* Gallery Section */
+/* GALLERY SECTION */
 .gallery-section {
   max-width: 1100px;
   margin: 40px auto;
   padding: 20px;
 }
-.gallery-row {
-  display: flex;
-  flex-wrap: wrap;
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
   gap: 12px;
-  justify-content: center;
+  justify-items: center;
 }
-.gallery-row img {
-  width: 200px;
+.gallery-grid img {
+  width: 100%;
+  max-width: 200px;
   border-radius: 6px;
   border: 1px solid #ccc;
   transition: transform 0.2s;
 }
-.gallery-row img:hover {
+.gallery-grid img:hover {
   transform: scale(1.03);
 }
 
-/* Footer */
+/* FOOTER */
 .site-footer {
   background: #efefef;
   padding: 40px 20px;
   margin-top: 40px;
 }
-.footer-columns {
+.footer-content {
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  align-items: flex-start;
   justify-content: space-between;
+  gap: 40px;
 }
-.footer-col-1, .footer-col-2 {
-  flex: 1 1 200px;
+.footer-left {
+  flex: 1;
 }
-.footer-col-1 p, .footer-col-2 p {
+.footer-right {
+  flex: 1;
+  text-align: right;
+}
+.footer-left p {
   margin-bottom: 0.6em;
   line-height: 1.4;
 }
-.footer-col-2 a {
-  margin-right: 12px;
+.footer-right .footer-links a {
   color: #0c71c3;
   text-decoration: none;
+  margin: 0 0.5em;
 }
-.footer-col-2 a:hover {
+.footer-right .footer-links a:hover {
   text-decoration: underline;
 }
-.socials {
-  margin-top: 5px;
+.footer-right .footer-social {
+  margin-top: 8px;
 }
-.socials a {
-  margin: 0 8px 0 0;
+.footer-right .footer-social a {
   color: #0c71c3;
-  font-weight: 600;
   text-decoration: none;
+  margin: 0 0.5em;
+  font-weight: 600;
 }
-.socials a:hover {
+.footer-right .footer-social a:hover {
   text-decoration: underline;
 }
 
-/* Responsive */
+/* RESPONSIVE */
 @media (max-width: 768px) {
-  /* Keep hero the same ratio for narrower screens */
   .intro-section {
     padding: 30px 20px;
   }
@@ -226,12 +230,14 @@ body {
     flex-direction: column;
     gap: 30px;
   }
-  .gallery-row img {
-    width: 100%;
-    max-width: 300px;
-  }
   .testimonial {
     border-left: none;
     border-top: 6px solid #0c71c3;
+  }
+  .footer-right {
+    text-align: left;
+  }
+  .footer-content {
+    flex-direction: column;
   }
 }
