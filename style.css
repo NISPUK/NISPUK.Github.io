@@ -1,3 +1,9 @@
+/*
+ * style.css
+ * A calm, more “premium” look with gradient background,
+ * soft shadows, and a full-width video. 
+ */
+
 /* Basic Reset & Typography */
 * {
   margin: 0;
@@ -5,31 +11,34 @@
   box-sizing: border-box;
 }
 
+/* Subtle gradient background for entire body */
 body {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(
+    to bottom right,
+    #f6f6f6 0%,
+    #ffffff 100%
+  );
   color: #333;
-  background: #fff;
   line-height: 1.6;
 }
 
-/* Full-Width Hero Video */
+/* Hero Video Section */
 .hero-video-section {
-  position: relative;
   width: 100%;
-  height: 100vh; /* Full screen height */
   overflow: hidden;
+  background: #000; /* fallback background if video doesn’t load */
 }
 
-/* The embedded Vimeo iframe */
+/* Full-Width Video Iframe: covers the entire width */
 .full-hero-video {
-  width: 100%;
-  height: 100%;
-  border: none;
-  object-fit: cover; /* Crops the video if necessary */
+  width: 100vw; /* forcibly fill width of viewport */
+  height: auto;
   display: block;
+  border: none;
 }
 
-/* Intro Section (after scrolling) */
+/* Intro Section */
 .intro-section {
   max-width: 800px;
   margin: 0 auto;
@@ -37,12 +46,13 @@ body {
   text-align: center;
 }
 .intro-section h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
+  font-weight: 600;
   margin-bottom: 0.5em;
 }
 .intro-section .subtitle {
   font-size: 1.1rem;
-  color: #666;
+  color: #555;
 }
 
 /* Product Section */
@@ -52,8 +62,11 @@ body {
   align-items: center;
   max-width: 1100px;
   margin: 30px auto;
-  padding: 20px;
+  padding: 30px 20px;
   gap: 40px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
 }
 .product-image {
   flex: 1 1 400px;
@@ -61,45 +74,57 @@ body {
 }
 .product-image img {
   width: 100%;
-  max-width: 400px;
+  max-width: 350px;
+  border-radius: 4px;
 }
 .product-content {
   flex: 1 1 400px;
+  padding: 10px;
 }
 .product-content h3 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin-bottom: 0.3em;
+  color: #0C71C3; 
 }
 .product-content h2 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5em;
+  font-size: 1.1rem;
+  margin-bottom: 0.8em;
+  color: #222;
 }
 .product-content p {
   margin-bottom: 1em;
+  color: #444;
 }
+
+/* PayPal Button */
 .paypal-button {
   display: inline-block;
   background: #ffc439;
   color: #111;
   text-decoration: none;
   font-weight: 600;
-  padding: 10px 20px;
+  padding: 12px 24px;
   border-radius: 4px;
-  transition: background 0.3s;
+  transition: background 0.3s, transform 0.1s;
 }
 .paypal-button:hover {
   background: #e0ab2d;
+  transform: scale(1.02);
 }
 
 /* Explainer Section */
 .explainer-section {
   max-width: 800px;
-  margin: 30px auto;
-  padding: 20px;
+  margin: 40px auto;
+  padding: 30px 20px;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  border-radius: 8px;
 }
 .explainer-section h3, .explainer-section h4 {
   margin-top: 1em;
   margin-bottom: 0.5em;
+  color: #0C71C3;
 }
 .explainer-section ul {
   list-style: disc;
@@ -109,6 +134,9 @@ body {
 .explainer-section li {
   margin-bottom: 0.5em;
 }
+.explainer-section strong {
+  color: #333;
+}
 
 /* Video Demo */
 .video-demo {
@@ -116,10 +144,14 @@ body {
   margin: 40px auto;
   padding: 20px;
   text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
 }
 .video-demo h3 {
   margin-bottom: 20px;
   font-size: 1.4rem;
+  color: #0C71C3;
 }
 .video-wrapper video {
   width: 100%;
@@ -132,17 +164,22 @@ body {
 .testimonial {
   max-width: 800px;
   margin: 40px auto;
-  padding: 20px;
-  border-left: 4px solid #0C71C3;
+  padding: 20px 30px;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  border-left: 6px solid #0C71C3;
   font-style: italic;
+  border-radius: 8px;
 }
 .testimonial p {
   margin-bottom: 10px;
   line-height: 1.4;
+  color: #555;
 }
 .testimonial footer {
-  font-weight: bold;
+  font-weight: 600;
   font-style: normal;
+  color: #333;
 }
 
 /* Gallery Section */
@@ -158,14 +195,18 @@ body {
   justify-content: center;
 }
 .gallery-row img {
-  max-width: 250px;
+  max-width: 220px;
   border-radius: 4px;
   border: 1px solid #ddd;
+  transition: transform 0.2s;
+}
+.gallery-row img:hover {
+  transform: scale(1.03);
 }
 
 /* Footer */
 .site-footer {
-  background: #f7f7f7;
+  background: #f1f1f1;
   padding: 40px 20px;
   margin-top: 40px;
 }
@@ -186,6 +227,11 @@ body {
 }
 .footer-col-2 a {
   margin-right: 15px;
+  text-decoration: none;
+  color: #0C71C3;
+}
+.footer-col-2 a:hover {
+  text-decoration: underline;
 }
 .socials {
   margin-top: 10px;
@@ -196,6 +242,9 @@ body {
   text-decoration: none;
   font-weight: bold;
   color: #0C71C3;
+}
+.socials a:hover {
+  color: #084a84;
 }
 
 /* Responsive */
@@ -212,5 +261,9 @@ body {
   }
   .gallery-row img {
     max-width: 100%;
+  }
+  .testimonial {
+    border-left: none;
+    border-top: 6px solid #0C71C3;
   }
 }
