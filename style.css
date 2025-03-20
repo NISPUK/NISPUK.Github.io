@@ -15,9 +15,9 @@ body {
 .hero-video-section {
   width: 100%;
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 ratio */
+  padding-bottom: 56.25%; /* maintain 16:9 */
   overflow: hidden;
-  background: #000; /* fallback */
+  background: #000; 
 }
 .video-container iframe {
   position: absolute;
@@ -196,29 +196,32 @@ body {
   flex: 1;
   text-align: right;
 }
-.footer-left p {
-  margin-bottom: 0.6em;
-  line-height: 1.4;
+/* Footer links row */
+.footer-links {
+  margin-bottom: 8px;
 }
-.footer-right .footer-links a {
+.footer-links a,
+.footer-links span {
+  margin: 0 0.4em;
   color: #0c71c3;
   text-decoration: none;
-  margin: 0 0.5em;
+  font-weight: 500;
 }
-.footer-right .footer-links a:hover {
+.footer-links a:hover {
   text-decoration: underline;
 }
-.footer-right .footer-social {
-  margin-top: 8px;
+.footer-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
 }
-.footer-right .footer-social a {
-  color: #0c71c3;
+.footer-icons svg {
+  width: 24px;
+  height: 24px;
+}
+.footer-icons a {
+  display: inline-block;
   text-decoration: none;
-  margin: 0 0.5em;
-  font-weight: 600;
-}
-.footer-right .footer-social a:hover {
-  text-decoration: underline;
 }
 
 /* RESPONSIVE */
@@ -239,5 +242,9 @@ body {
   }
   .footer-content {
     flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-icons {
+    justify-content: flex-start;
   }
 }
